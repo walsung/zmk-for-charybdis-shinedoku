@@ -22,6 +22,18 @@
         };
     };
 
+    trackball_listener {
+        compatible = "zmk,input-behavior-listener";
+        device = <&vtrackball>;
+        layers = <0 2 3 4 5>;
+        evt-type = <INPUT_EV_REL>;
+        x-input-code = <INPUT_REL_X>;
+        y-input-code = <INPUT_REL_Y>;
+        scale-multiplier = <1>;
+        scale-divisor = <1>;
+        bindings = <&ib_toggle_layer 5>;
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -35,7 +47,7 @@
                                                  &kp LEFT_ALT  &kp LCTRL         &kp SPACE
             >;
 
-            trackball-bindings = <&tmv_coarse>;
+            //trackball-bindings = <&tmv_coarse>;
         };
 
         layer_1 {
@@ -81,7 +93,7 @@
                                       &trans     &trans       &trans
             >;
 
-            trackball-bindings = <&tsl>;//滚轮层
+            //trackball-bindings = <&tsl>;//滚轮层
         };
 
         layer_5 {
@@ -94,7 +106,7 @@
                                       &trans     &trans       &trans
             >;
 
-            trackball-bindings = <&tmv_fine>;//精准指针层
+            //trackball-bindings = <&tmv_fine>;//精准指针层
         };
     };
 };
