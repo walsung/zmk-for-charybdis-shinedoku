@@ -1,5 +1,5 @@
 
-//#define ZMK_POINTING_DEFAULT_MOVE_VAL 6000
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 6000
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -35,7 +35,7 @@
                                                  &kp LEFT_ALT  &kp LCTRL         &kp SPACE
             >;
 
-            //trackball-bindings = <&tmv_coarse>;
+            trackball-bindings = <&tmv_coarse>;
         };
 
         layer_1 {
@@ -81,7 +81,7 @@
                                       &trans     &trans       &trans
             >;
 
-            //trackball-bindings = <&tsl>;//滚轮层
+            trackball-bindings = <&tsl>;//滚轮层
         };
 
         layer_5 {
@@ -94,7 +94,7 @@
                                       &trans     &trans       &trans
             >;
 
-            //trackball-bindings = <&tmv_fine>;//精准指针层
+            trackball-bindings = <&tmv_fine>;//精准指针层
         };
     };
 };
