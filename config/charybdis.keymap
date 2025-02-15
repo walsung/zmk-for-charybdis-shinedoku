@@ -1,7 +1,7 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     tapping-term-ms = <200>;
@@ -47,12 +47,12 @@
 
         Base {
             bindings = <
-&kp GRAVE       &kp N1       &kp N2          &kp N3           &kp N4            &kp N5          &kp N6         &kp N7             &kp N8      &kp N9           &kp N0               &kp BACKSLASH
-&kp TAB         &kp Q        &kp W           &kp E            &kp R             &kp T           &kp Y          &kp U              &kp I       &kp O            &kp P                &kp UNDERSCORE
-&kp LEFT_SHIFT  &hm LCTRL A  &hm LEFT_ALT S  &hm LEFT_GUI D   &hm LEFT_SHIFT F  &kp G           &kp H          &hm RIGHT_SHIFT J  &hm RGUI K  &hm RIGHT_ALT L  &hm RCTRL SEMICOLON  &lt 5 CAPS
-&kp LCTRL       &kp Z        &kp X           &kp C            &kp V             &kp B           &kp N          &kp M              &kp COMMA   &kp DOT          &lt 5 SLASH          &lt 4 PRINTSCREEN
-                                             &lt 3 BACKSPACE  &lt 1 SPACE       &lt 2 DELETE    &lt 2 LC(RET)  &lt 3 RET
-                                                              &mkp LCLK         &mkp RCLK       &lt 1 END
+&kp GRAVE       &kp N1       &kp N2          &kp N3           &kp N4            &kp N5                &kp N6               &kp N7             &kp N8      &kp N9           &kp N0               &kp BACKSLASH
+&kp TAB         &kp Q        &kp W           &kp E            &kp R             &kp T                 &kp Y                &kp U              &kp I       &kp O            &kp P                &kp UNDERSCORE
+&kp LEFT_SHIFT  &hm LCTRL A  &hm LEFT_ALT S  &hm LEFT_GUI D   &hm LEFT_SHIFT F  &hm LEFT_BRACE G      &hm H H              &hm RIGHT_SHIFT J  &hm RGUI K  &hm RIGHT_ALT L  &hm RCTRL SEMICOLON  &lt 5 CAPS
+&kp LCTRL       &kp Z        &kp X           &kp C            &kp V             &hm LEFT_BRACKET B    &hm RIGHT_BRACKET N  &kp M              &kp COMMA   &kp DOT          &lt 5 SLASH          &lt 4 PRINTSCREEN
+                                             &lt 3 BACKSPACE  &lt 1 SPACE       &lt 2 DELETE          &lt 2 LC(RET)        &lt 3 RET
+                                                              &mkp LCLK         &mkp RCLK             &lt 1 END
             >;
 
             trackball-bindings = <&tmv_coarse>;
