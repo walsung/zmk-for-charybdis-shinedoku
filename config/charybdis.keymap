@@ -51,6 +51,7 @@
             x-input-code = <50>;
             y-input-code = <50>;
             time-to-max-speed-ms = <300>;
+            acceleration-exponent = <1>;
         };
 
         msc: msc {
@@ -60,6 +61,7 @@
             x-input-code = <50>;
             y-input-code = <50>;
             time-to-max-speed-ms = <300>;
+            acceleration-exponent = <0>;
         };
     };
 
