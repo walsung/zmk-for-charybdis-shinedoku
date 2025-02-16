@@ -4,7 +4,8 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     tapping-term-ms = <200>;
@@ -42,6 +43,24 @@
             bindings = <&kp>, <&kp>;
 
             label = "HOMEROW_MODS";
+        };
+
+        mmv: mmv {
+            compatible = "zmk,behavior-input-two-axis";
+            label = "MMV";
+            #binding-cells = <1>;
+            x-input-code = <50>;
+            y-input-code = <50>;
+            time-to-max-speed-ms = <300>;
+        };
+
+        msc: msc {
+            compatible = "zmk,behavior-input-two-axis";
+            label = "MSC";
+            #binding-cells = <1>;
+            x-input-code = <50>;
+            y-input-code = <50>;
+            time-to-max-speed-ms = <300>;
         };
     };
 
