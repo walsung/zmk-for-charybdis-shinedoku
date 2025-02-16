@@ -4,7 +4,8 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     tapping-term-ms = <200>;
@@ -120,12 +121,12 @@
 
         Scroll {
             bindings = <
-&trans  &trans  &trans            &trans          &trans           &trans    &trans  &trans     &trans  &trans  &trans     &trans
-&trans  &trans  &msc MOVE_X(-15)  &msc SCRL_UP    &msc MOVE_X(15)  &trans    &trans  &trans     &trans  &trans  &trans     &trans
-&trans  &trans  &msc SCRL_LEFT    &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans    &trans  &trans     &trans  &trans  &mkp RCLK  &trans
-&trans  &trans  &msc MOVE_Y(-15)  &trans          &msc MOVE_Y(15)  &trans    &trans  &trans     &trans  &trans  &mkp LCLK  &trans
-                                  &trans          &trans           &trans    &trans  &mkp LCLK
-                                                  &trans           &trans    &trans
+&trans  &trans  &trans          &trans          &trans           &trans    &trans  &trans     &trans  &trans  &trans     &trans
+&trans  &trans  &trans          &msc SCRL_UP    &trans           &trans    &trans  &trans     &trans  &trans  &trans     &trans
+&trans  &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans    &trans  &trans     &trans  &trans  &mkp RCLK  &trans
+&trans  &trans  &trans          &trans          &trans           &trans    &trans  &trans     &trans  &trans  &mkp LCLK  &trans
+                                &trans          &trans           &trans    &trans  &mkp LCLK
+                                                &trans           &trans    &trans
             >;
 
             trackball-bindings = <&tsl>;
